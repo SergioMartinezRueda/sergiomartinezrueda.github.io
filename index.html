@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sergio Martínez Rueda · Portfolio</title>
+  <meta name="description" content="Portfolio de Sergio Martínez Rueda, estudiante de Desarrollo de Aplicaciones Multiplataforma en Málaga.">
+  <meta name="theme-color" content="#15142E">
+
+  <meta property="og:title" content="Sergio Martínez Rueda · Portfolio">
+  <meta property="og:description" content="Estudiante de DAM en Málaga. Apps móviles y juegos.">
+
+  <link rel="icon" href="img/icono.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <div class="escena" aria-hidden="true">
+
+    <div class="capa cielo-dia"></div>
+    <div class="capa cielo-noche"></div>
+    <div class="sol"></div>
+    <img class="capa nubes" src="img/nubes.svg" alt="">
+    <img class="capa montanas" src="img/montanas.svg" alt="">
+    <div class="capa niebla"></div>
+    <div class="capa velo-noche"></div>
+    <img class="capa estrellas" src="img/estrellas.svg" alt="">
+    <div class="luna"></div>
+    <img class="capa bosque" src="img/bosque.svg" alt="">
+    <img class="capa torii" src="img/torii.svg" alt="">
+    <img class="capa ciudad" src="img/ciudad.svg" alt="">
+    <div class="petalos" id="petalos"></div>
+  </div>
+
+  <header class="cabecera">
+    <nav class="nav" aria-label="Principal">
+      <a class="logo" href="#inicio">Sergio<span class="logo-punto" aria-hidden="true">·</span><span class="logo-sub">Portfolio</span></a>
+      <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="menu">Menú</button>
+      <ul id="menu" class="menu">
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#gustos">Gustos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <section id="inicio" class="inicio">
+      <div class="panel">
+        <p class="saludo">Hola, soy</p>
+        <h1>Sergio Martínez Rueda</h1>
+        <p class="intro">
+          Soy Sergio, estudiante de <strong>Desarrollo de Aplicaciones Multiplataforma</strong> en Málaga.
+          Vengo del grado medio de <strong>Sistemas Microinformáticos y Redes</strong>, así que antes de
+          programar ordenadores aprendí cómo funcionan por dentro. Ahora hago apps móviles con Kotlin y Java
+          y juegos en Roblox. Me atraen la <strong>inteligencia artificial</strong> y la
+          <strong>ciberseguridad</strong>, y sigo explorando hacia dónde especializarme.
+        </p>
+        <ul class="enlaces">
+          <li><a class="boton boton-principal" href="#proyectos">Ver proyectos</a></li>
+          <li><a class="boton" href="https://github.com/SergioMartinezRueda" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a class="boton" href="https://www.linkedin.com/in/sergio-martinez-rueda/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <p class="desliza" id="desliza">Desliza para ver cómo cae la noche ↓</p>
+    </section>
+
+    <section id="tecnologias" class="seccion">
+      <div class="panel revelar">
+        <h2 class="titulo"><span class="chip"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg></span><span class="numero">01</span> Tecnologías</h2>
+        <div class="rejilla">
+          <div class="tarjeta grupo"><h3>Lenguajes</h3><ul class="pildoras"><li>Java</li><li>Kotlin</li><li>Luau</li></ul></div>
+          <div class="tarjeta grupo"><h3>Web</h3><ul class="pildoras"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
+          <div class="tarjeta grupo"><h3>Bases de datos</h3><ul class="pildoras"><li>SQL</li><li>MySQL</li></ul></div>
+          <div class="tarjeta grupo"><h3>Móvil</h3><ul class="pildoras"><li>Android Studio</li></ul></div>
+          <div class="tarjeta grupo"><h3>Herramientas</h3><ul class="pildoras"><li>Git</li><li>GitHub</li><li>Roblox Studio</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos" class="seccion">
+      <div class="panel revelar">
+        <h2 class="titulo"><span class="chip"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7.5A2.5 2.5 0 0 1 5.5 5H9l2 2h7.5A2.5 2.5 0 0 1 21 9.5v7a2.5 2.5 0 0 1-2.5 2.5h-13A2.5 2.5 0 0 1 3 16.5z"/></svg></span><span class="numero">02</span> Proyectos</h2>
+        <div class="rejilla">
+          <article class="tarjeta proyecto">
+            <h3>Juego Android</h3>
+            <p>Juego para móvil Android desarrollado en equipo con un compañero.</p>
+            <ul class="pildoras"><li>Java</li><li>Kotlin</li><li>Android Studio</li></ul>
+
+            <p class="acciones"><span class="pendiente">Repositorio próximamente</span></p>
+          </article>
+          <article class="tarjeta proyecto">
+            <h3>Juego de Roblox</h3>
+            <p>Mi propio juego en Roblox. Programo las mecánicas en Luau.</p>
+            <ul class="pildoras"><li>Luau</li><li>Roblox Studio</li></ul>
+
+            <p class="acciones"><span class="pendiente">Repositorio próximamente</span></p>
+          </article>
+          <article class="tarjeta proyecto">
+            <h3>Este portfolio</h3>
+            <p>Hecho a mano con HTML, CSS y JavaScript, sin frameworks. El fondo es una escena japonesa en SVG por capas que se mueve con el scroll.</p>
+            <ul class="pildoras"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>SVG</li></ul>
+            <p class="acciones">
+              <a class="enlace-flecha" href="https://github.com/SergioMartinezRueda/SergioMartinezRueda.github.io" target="_blank" rel="noopener">Repositorio</a>
+              <a class="enlace-flecha" href="https://sergiomartinezrueda.github.io" target="_blank" rel="noopener">Web</a>
+            </p>
+          </article>
+        </div>
+
+        <h3 class="subtitulo"><span class="punto-vivo" aria-hidden="true"></span> En desarrollo</h3>
+        <article class="tarjeta desarrollo">
+          <h3>App de navegación</h3>
+          <p>App de navegación y rutas al estilo Waze, en Kotlin y Java, junto a un compañero. Todavía en fase de diseño.</p>
+          <ul class="pildoras"><li>Kotlin</li><li>Java</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="formacion" class="seccion">
+      <div class="panel revelar">
+        <h2 class="titulo"><span class="chip"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5zM6 11.2V16c3.5 2.4 8.5 2.4 12 0v-4.8M22 9v6"/></svg></span><span class="numero">03</span> Formación</h2>
+        <ol class="linea-tiempo">
+
+          <li class="tarjeta en-curso">
+            <span class="estado">En curso</span>
+            <span class="fecha">2025 – actualidad</span>
+            <h3>CFGS Desarrollo de Aplicaciones Multiplataforma</h3>
+            <p>2.º curso · Davante Nova</p>
+          </li>
+          <li class="tarjeta completado">
+            <span class="estado">Completado</span>
+            <span class="fecha">2023 – 2025</span>
+            <h3>CFGM Sistemas Microinformáticos y Redes</h3>
+            <p>Davante Aurora</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="gustos" class="seccion">
+      <div class="panel revelar">
+        <h2 class="titulo"><span class="chip"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-9.3-9.2A4.8 4.8 0 0 1 12 7.6a4.8 4.8 0 0 1 9.3 3.2C19.5 15.4 12 20 12 20z"/></svg></span><span class="numero">04</span> Gustos</h2>
+        <p class="entradilla">Cuando no estoy programando, suelo estar con alguna de estas cosas:</p>
+        <div class="rejilla">
+          <div class="tarjeta"><h3>Anime</h3><ul class="pildoras rosa"><li>Cyberpunk: Edgerunners</li><li>Attack on Titan</li><li>Naruto</li></ul></div>
+          <div class="tarjeta"><h3>Videojuegos</h3><ul class="pildoras rosa"><li>Minecraft</li><li>The Binding of Isaac</li><li>Dark Souls</li></ul></div>
+        </div>
+        <p class="nota">Y la cultura japonesa, que es de donde sale el fondo de esta web.</p>
+      </div>
+    </section>
+
+    <section id="contacto" class="seccion seccion-ancha">
+      <div class="panel revelar">
+        <h2 class="titulo"><span class="chip"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5L12 13l8.5-6.5"/></svg></span><span class="numero">05</span> Contacto</h2>
+        <p class="entradilla">Si quieres hablar conmigo, escríbeme:</p>
+        <ul class="rejilla contacto">
+          <li><a class="tarjeta enlace-contacto" href="mailto:sergiomartinezrueda06@gmail.com"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5L12 13l8.5-6.5"/></svg><span><span class="clave">Correo</span>sergiomartinezrueda06@gmail.com</span></a></li>
+          <li><a class="tarjeta enlace-contacto" href="https://www.linkedin.com/in/sergio-martinez-rueda/" target="_blank" rel="noopener"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span><span class="clave">LinkedIn</span>sergio-martinez-rueda</span></a></li>
+          <li><a class="tarjeta enlace-contacto" href="https://github.com/SergioMartinezRueda" target="_blank" rel="noopener"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="8" r="2.5"/><path d="M6 8.5v7M18 10.5c0 4-6 3-11 5.5"/></svg><span><span class="clave">GitHub</span>SergioMartinezRueda</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p>Hecho a mano con HTML, CSS y JavaScript</p>
+  </footer>
+</body>
+</html>
